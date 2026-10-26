@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enquiry | O.T Kitchen</title>
+  <meta name="description" content="Send an enquiry or place an order request with O.T Kitchen in Pankop.">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <div class="logo">O.T Kitchen</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="enquiry.html" class="active">Enquiry</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Send Us an Enquiry</h2>
+      <p>Have a question about our menu, or want to place a bulk order? Fill in the form below and we'll get back to you.</p>
+
+      <form id="enquiryForm" action="#" method="post" novalidate>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name">
+        <small id="nameError" class="error-message"></small>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="e.g. 074 000 0000">
+        <small id="phoneError" class="error-message"></small>
+
+        <label for="type">Enquiry Type</label>
+        <select id="type" name="type">
+          <option value="order">Place an Order</option>
+          <option value="general">General Question</option>
+          <option value="bulk">Bulk / Event Order</option>
+        </select>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Tell us what you need..."></textarea>
+        <small id="messageError" class="error-message"></small>
+
+        <button type="submit" class="btn">Send Enquiry</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 O.T Kitchen. All rights reserved.</p>
+    <p>1095 Itsoseng Section, Pankop, 0414 | <a href="tel:0744042244">074 404 2244</a></p>
+  </footer>
+
+  <script src="js/validation.js"></script>
+</body>
+</html>

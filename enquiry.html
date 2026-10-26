@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Enquiry and Order Requests | O.T Kitchen Pankop</title>
+  <meta name="description" content="Ask O.T Kitchen about menu items, availability or bulk food orders in Pankop using our enquiry form.">
+  <meta name="theme-color" content="#2b1810"><meta name="robots" content="index, follow"><meta property="og:title" content="Enquire with O.T Kitchen"><meta property="og:description" content="Ask about menu items and order availability.">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css"><script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header><div class="header-container"><a class="logo" href="index.html" aria-label="O.T Kitchen home">O.T Kitchen</a><nav aria-label="Main navigation"><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="menu.html">Menu</a></li><li><a href="enquiry.html" class="active" aria-current="page">Enquiry</a></li><li><a href="contact.html">Contact</a></li></ul></nav></div></header>
+  <main id="main-content"><section><h1>Send Us an Enquiry</h1><p>Ask about menu items, availability, or a bulk order. Complete all required fields and we will show you the next step.</p>
+    <form id="enquiryForm" action="#" method="post" novalidate>
+      <label for="enquiryName">Full Name</label><input type="text" id="enquiryName" name="name" placeholder="Your full name" minlength="3" autocomplete="name" required aria-describedby="enquiryNameError"><small class="error-message" id="enquiryNameError" aria-live="polite"></small>
+      <label for="phone">Phone Number</label><input type="tel" id="phone" name="phone" placeholder="e.g. 074 000 0000" autocomplete="tel" inputmode="tel" required aria-describedby="phoneError"><small class="error-message" id="phoneError" aria-live="polite"></small>
+      <label for="type">Enquiry Type</label><select id="type" name="type" required><option value="Place an order">Place an order</option><option value="General question">General question</option><option value="Bulk / event order">Bulk / event order</option><option value="Product availability">Product availability</option></select>
+      <label for="enquiryMessage">Message</label><textarea id="enquiryMessage" name="message" placeholder="Tell us what you would like to order or ask..." minlength="5" required aria-describedby="enquiryMessageError"></textarea><small class="error-message" id="enquiryMessageError" aria-live="polite"></small>
+      <p id="formResponse" class="form-response" aria-live="polite"></p><button type="submit" class="btn">Check Enquiry</button>
+    </form>
+    <p class="helper-text">This student project uses client-side validation only. Your enquiry is not automatically stored or sent. Please call <a href="tel:0744042244">074 404 2244</a> to confirm orders.</p>
+  </section></main>
+  <footer><p>&copy; <span class="current-year">2026</span> O.T Kitchen. All rights reserved.</p><p>1095 Itsoseng Section, Pankop, 0414 | <a href="tel:0744042244">074 404 2244</a></p></footer>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O.T Kitchen Menu | Kotas, Chips and Fresh Bread in Pankop</title>
+  <meta name="description" content="Explore the O.T Kitchen menu in Pankop, including kotas, chips, extras and fresh Fakumoya bread. Search the menu and filter items by category.">
+  <meta name="theme-color" content="#2b1810">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="O.T Kitchen Menu">
+  <meta property="og:description" content="Fresh kotas, chips, extras and bread in Pankop.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header><div class="header-container"><a class="logo" href="index.html" aria-label="O.T Kitchen home">O.T Kitchen</a>
+    <nav aria-label="Main navigation"><ul>
+      <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="menu.html" class="active" aria-current="page">Menu</a></li><li><a href="enquiry.html">Enquiry</a></li><li><a href="contact.html">Contact</a></li>
+    </ul></nav></div></header>
+  <main id="main-content">
+    <section>
+      <h1>Our Menu</h1>
+      <p>Explore our kota fillings, sides and fresh bread. Prices are shown in South African rand (ZAR).</p>
+      <div class="menu-tools" aria-label="Menu search and filters">
+        <div class="control-group"><label for="menuSearch">Search menu items</label><input type="search" id="menuSearch" placeholder="Try cheese, chips, bread..." autocomplete="off" aria-describedby="searchHelp"></div>
+        <div class="control-group"><label for="categoryFilter">Filter category</label><select id="categoryFilter"><option value="all">All categories</option><option value="kota">Kotas</option><option value="extra">Extras</option><option value="bread">Bread</option></select></div>
+        <div class="control-group"><label for="sortMenu">Sort items</label><select id="sortMenu"><option value="default">Original order</option><option value="name-asc">Name: A to Z</option><option value="price-asc">Price: low to high</option><option value="price-desc">Price: high to low</option></select></div>
+      </div>
+      <p id="searchHelp" class="helper-text">Search by item name or ingredient. Use the filters to narrow the list.</p>
+      <p id="menuCount" class="form-response" aria-live="polite">Showing all menu items.</p>
+      <div class="table-wrap"><table class="filterable-menu" id="menuTable">
+        <thead><tr><th scope="col">Item</th><th scope="col">Description</th><th scope="col">Price</th><th scope="col">Category</th></tr></thead>
+        <tbody>
+          <tr data-category="kota" data-price="25"><td>Atchar + Polony + Chips</td><td>A classic kota with atchar, polony and chips.</td><td>R25.00</td><td>Kotas</td></tr>
+          <tr data-category="kota" data-price="28"><td>Atchar + Polony + Cheese + Chips</td><td>A kota with cheese added to the classic filling.</td><td>R28.00</td><td>Kotas</td></tr>
+          <tr data-category="kota" data-price="28"><td>Atchar + Polony + Vienna + Chips</td><td>A kota with polony, vienna and chips.</td><td>R28.00</td><td>Kotas</td></tr>
+          <tr data-category="kota" data-price="35"><td>Atchar + Polony + Cheese + Vienna + Chips</td><td>A loaded combination of cheese, vienna and chips.</td><td>R35.00</td><td>Kotas</td></tr>
+          <tr data-category="kota" data-price="35"><td>Atchar + Polony + Cheese + Egg + Chips</td><td>A kota with cheese, egg and chips.</td><td>R35.00</td><td>Kotas</td></tr>
+          <tr data-category="kota" data-price="39"><td>Atchar + Polony + Cheese + Russian + Chips</td><td>A kota with cheese, Russian sausage and chips.</td><td>R39.00</td><td>Kotas</td></tr>
+          <tr data-category="kota" data-price="48"><td>Full House (all fillings) + Chips</td><td>A generous kota with all available fillings and chips.</td><td>R48.00</td><td>Kotas</td></tr>
+          <tr data-category="extra" data-price="25"><td>Small Chips</td><td>A serving of crispy chips.</td><td>R25.00</td><td>Extras</td></tr>
+          <tr data-category="extra" data-price="45"><td>Large Chips</td><td>A larger serving of crispy chips.</td><td>R45.00</td><td>Extras</td></tr>
+          <tr data-category="extra" data-price="15"><td>Vienna</td><td>Extra vienna sausage.</td><td>R15.00</td><td>Extras</td></tr>
+          <tr data-category="extra" data-price="5"><td>Egg</td><td>Add an egg to your meal.</td><td>R5.00</td><td>Extras</td></tr>
+          <tr data-category="extra" data-price="5"><td>Cheese</td><td>Add cheese to your kota.</td><td>R5.00</td><td>Extras</td></tr>
+          <tr data-category="extra" data-price="20"><td>Russian</td><td>Extra Russian sausage.</td><td>R20.00</td><td>Extras</td></tr>
+          <tr data-category="extra" data-price="5"><td>Spiral Potato (Small)</td><td>Small spiral potato snack.</td><td>R5.00</td><td>Extras</td></tr>
+          <tr data-category="extra" data-price="10"><td>Spiral Potato (Large)</td><td>Large spiral potato snack.</td><td>R10.00</td><td>Extras</td></tr>
+          <tr data-category="bread" data-price="12"><td>Fakumoya Bread</td><td>Fresh bread available to order or buy in store.</td><td>R12.00</td><td>Bread</td></tr>
+        </tbody>
+      </table></div>
+      <p id="noMenuResults" class="no-results" hidden>No menu items match your search. Try a different word or category.</p>
+    </section>
+    <section class="card-grid">
+      <article class="card"><h2>Fresh Fakumoya Bread</h2><img class="menu-feature-image" src="images/fakumoya.webp" alt="Fresh Fakumoya bread from O.T Kitchen" loading="lazy"><p>Fresh bread available to order or buy in store.</p><p class="price">R12.00</p></article>
+      <article class="card"><h2>Spiral Potatoes</h2><img class="menu-feature-image" src="images/spiral.webp" alt="Spiral potato snacks" loading="lazy"><p>Choose a small or large spiral potato snack.</p><p class="price">From R5.00</p></article>
+      <article class="card"><h2>Want to order?</h2><p>Use the enquiry form to ask about availability or bulk orders.</p><a href="enquiry.html" class="btn">Make an Enquiry</a></article>
+    </section>
+    <section><h2>Operating Hours</h2><p>Monday – Sunday: 10:00 AM – 8:00 PM</p><p>Please call ahead to confirm availability before travelling.</p></section>
+  </main>
+  <footer><p>&copy; <span class="current-year">2026</span> O.T Kitchen. All rights reserved.</p><p>1095 Itsoseng Section, Pankop, 0414 | <a href="tel:0744042244">074 404 2244</a></p></footer>
+</body>
+</html>
